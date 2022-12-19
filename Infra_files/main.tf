@@ -20,7 +20,7 @@ terraform {
 
     # rather than defining this inline, the Access Key can also be sourced
     # from an Environment Variable - more information is available below.
-    access_key = "__storagekey__"
+    access_key = "MUZnZmBWzhWGH5GCMyt1tSwNvvzKvWWqVVyBGGB9am9u9QTmRLWLaHTaVNk5SzPsUiphbR9YJKDS+AStLyYUHA=="
     features {}
   }
 }
