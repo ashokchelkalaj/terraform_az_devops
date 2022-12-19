@@ -12,18 +12,18 @@ provider "azurerm" {
   features {}  
 }
 
-terraform {
-  backend "azurerm" {
-    storage_account_name = "__terraformstorageaccount__"
-    container_name       = "tfstate"
-    key                  = "terraform.tfstate"
+# terraform {
+#   backend "azurerm" {
+#     storage_account_name = "__terraformstorageaccount__"
+#     container_name       = "tfstate"
+#     key                  = "terraform.tfstate"
 
-    # rather than defining this inline, the Access Key can also be sourced
-    # from an Environment Variable - more information is available below.
-    access_key = "MUZnZmBWzhWGH5GCMyt1tSwNvvzKvWWqVVyBGGB9am9u9QTmRLWLaHTaVNk5SzPsUiphbR9YJKDS+AStLyYUHA=="
-    features {}
-  }
-}
+#     # rather than defining this inline, the Access Key can also be sourced
+#     # from an Environment Variable - more information is available below.
+#     access_key = "MUZnZmBWzhWGH5GCMyt1tSwNvvzKvWWqVVyBGGB9am9u9QTmRLWLaHTaVNk5SzPsUiphbR9YJKDS+AStLyYUHA=="
+#     features {}
+#   }
+# }
 
 
 resource "azurerm_resource_group" "rg" {
